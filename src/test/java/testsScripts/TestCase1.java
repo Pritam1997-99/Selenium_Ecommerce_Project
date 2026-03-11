@@ -1,10 +1,12 @@
 package testsScripts;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import AlightWealth.PageObject.FinalPage;
@@ -16,18 +18,19 @@ import AlightWealth.PageObject.ProductCheckOut;
 import AlightWealth.TestComponents.BaseTest;
 
 public class TestCase1 extends BaseTest {
-	@Test
-	public void submitOrder() throws IOException, InterruptedException {
+	//String productName="ADIDAS ORIGINAL";
+	@Test(dataProvider="getData")
+	public void submitOrder(HashMap<String,String> input) throws IOException, InterruptedException {
 	
-		String productName="ADIDAS ORIGINAL";
-		ProductCatalogue listOfProducts = page.login("abcselenium@123.com", "Selenium@123");
+		
+		ProductCatalogue listOfProducts = page.login(input.get("email"), input.get("password"));
 		List<WebElement> productsList = listOfProducts.getProductList();
-		WebElement desiredProduct = listOfProducts.getDesiredProductName(productName);
-		listOfProducts.selectDesiredProduct(productName);
+		WebElement desiredProduct = listOfProducts.getDesiredProductName(input.get("productName"));
+		listOfProducts.selectDesiredProduct(input.get("productName"));
 		page.goToCart();
 		ProductCheckOut checkOut = new ProductCheckOut(driver);
 		checkOut.getCartProducts();
-		Assert.assertEquals(checkOut.verifyDesiredProduct(productName), productName);
+		Assert.assertEquals(checkOut.verifyDesiredProduct(input.get("productName")), input.get("productName"));
 		PaymentPage paymentPage = checkOut.clickAndCheckOut();
 		paymentPage.selectCountry("Ind");
 		FinalPage finalPage = paymentPage.placeOrder();
@@ -35,11 +38,22 @@ public class TestCase1 extends BaseTest {
 		Assert.assertEquals(confirmText, "THANKYOU FOR THE ORDER.");
 		
 	}
-	@Test
-	public void verifyOrdersPage() {
+	@Test(dependsOnMethods = {"submitOrder"}, dataProvider="getData")
+	public void verifyOrdersPage(HashMap<String,String> input) {
 		
+		page.login(input.get("email"), input.get("password"));
+		OrdersPage orders=new OrdersPage(driver);
+		boolean result = orders.verifyProductPresentInOrdersPage(input.get("productName"));
+		Assert.assertTrue(result);
 		
+	}
+	@DataProvider
+	public Object[][] getData() throws IOException {
 		
+		List<HashMap<String, String>> data = getJsonDataToMap(System.getProperty("user.dir")+"//src//test//java//AlightWealth//data//Credentials.json");
+		
+		return new Object[][] {{data.get(0)},{data.get(1)}};
+		//return new Object[][] {{"abcselenium@123.com","Selenium@123","ADIDAS ORIGINAL"},{"lalit.123@gmail.com","Demo@123","ADIDAS ORIGINAL"}};
 	}
 
 }

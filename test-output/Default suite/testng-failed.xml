@@ -6,6 +6,7 @@
       <class name="testsScripts.TestCase1">
         <methods>
           <include name="submitOrder"/>
+          <include name="verifyOrdersPage"/>
           <include name="closeDriver"/>
           <include name="landingPage"/>
         </methods>

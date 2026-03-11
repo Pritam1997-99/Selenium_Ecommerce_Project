@@ -23,11 +23,14 @@ public class ProductCatalogue extends AbstractFunctions {
 
 	@FindBy(xpath = "//div[starts-with(@class,'col-lg-4')]")
 	List<WebElement> prod;
+	
+	@FindBy(css = ".ng-animating")
+	WebElement spinner;
 
 	By waitBy = By.xpath("//div[starts-with(@class,'col-lg-4')]");
 	// WebElement
 	// need=prod.findElement(By.xpath("//div[@class='card-body']/button[2]"));
-	By cartWait2 = By.id("toast-container");
+	By toastMessage = By.cssSelector("#toast-container");
 
 	public List<WebElement> getProductList() {
 		waitForElementToAppeare(waitBy);
@@ -39,18 +42,24 @@ public class ProductCatalogue extends AbstractFunctions {
 
 		List<WebElement> products = getProductList();
 		for (WebElement prod : products) {
-			String val=prod.findElement(By.xpath("//div[@class='card-body']/h5/b")).getText();
+			WebElement ele=prod.findElement(By.xpath("//div[@class='card-body']"));
+			String val=ele.findElement(By.xpath("//h5/b")).getText();
 			if (val.equalsIgnoreCase(productName)) {
-				return prod;
+				return ele;
 			}
 
 		}
 		return null;
+		/*WebElement prod=products.stream().filter(p->
+		p.findElement(By.xpath("//b")).getText().equalsIgnoreCase(productName)).findFirst().orElse(null);
+		return prod;*/
 	}
 
 	public void selectDesiredProduct(String productName) throws InterruptedException {
 		WebElement prod = getDesiredProductName(productName);
 		prod.findElement(By.xpath("//button[2]")).click();
+		waitForElementToAppeare(toastMessage);
+		waitForElementToDissappeare(spinner);
 		goToCart();
 
 	}

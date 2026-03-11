@@ -1,53 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-25T10:25:57 IST" name="Suite" finished-at="2026-02-25T10:26:28 IST" duration-ms="31528">
+  <suite started-at="2026-03-11T09:47:17 IST" name="Default suite" finished-at="2026-03-11T09:48:08 IST" duration-ms="51118">
     <groups>
     </groups>
-    <test started-at="2026-02-25T10:25:57 IST" name="Submit Order Test" finished-at="2026-02-25T10:26:15 IST" duration-ms="18705">
+    <test started-at="2026-03-11T09:47:17 IST" name="Default test" finished-at="2026-03-11T09:48:08 IST" duration-ms="51118">
       <class name="testsScripts.TestCase1">
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.TestCase1@13c9d689]" started-at="2026-02-25T10:25:57 IST" name="landingPage" finished-at="2026-02-25T10:26:03 IST" duration-ms="6061" status="PASS">
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.TestCase1@1573f9fc]" started-at="2026-03-11T09:47:17 IST" name="landingPage" finished-at="2026-03-11T09:47:23 IST" duration-ms="5312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- landingPage -->
-        <test-method signature="submitOrder()[pri:0, instance:testsScripts.TestCase1@13c9d689]" started-at="2026-02-25T10:26:03 IST" name="submitOrder" finished-at="2026-02-25T10:26:15 IST" duration-ms="12446" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:testsScripts.TestCase1@1573f9fc]" started-at="2026-03-11T09:47:23 IST" name="submitOrder" data-provider="getData" finished-at="2026-03-11T09:47:38 IST" duration-ms="15631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Selenium@123, email=abcselenium@123.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.TestCase1@13c9d689]" started-at="2026-02-25T10:26:15 IST" name="closeDriver" finished-at="2026-02-25T10:26:15 IST" duration-ms="142" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.TestCase1@1573f9fc]" started-at="2026-03-11T09:47:38 IST" name="closeDriver" finished-at="2026-03-11T09:47:38 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.TestCase1@1573f9fc]" started-at="2026-03-11T09:47:38 IST" name="landingPage" finished-at="2026-03-11T09:47:42 IST" duration-ms="4031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingPage -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:testsScripts.TestCase1@1573f9fc]" started-at="2026-03-11T09:47:42 IST" name="submitOrder" data-provider="getData" finished-at="2026-03-11T09:47:58 IST" duration-ms="15170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Demo@123, email=lalit.123@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.TestCase1@1573f9fc]" started-at="2026-03-11T09:47:58 IST" name="closeDriver" finished-at="2026-03-11T09:47:58 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.TestCase1@1573f9fc]" started-at="2026-03-11T09:47:58 IST" name="landingPage" finished-at="2026-03-11T09:47:59 IST" duration-ms="1650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingPage -->
+        <test-method signature="verifyOrdersPage(java.util.HashMap)[pri:0, instance:testsScripts.TestCase1@1573f9fc]" started-at="2026-03-11T09:47:59 IST" name="verifyOrdersPage" data-provider="getData" finished-at="2026-03-11T09:48:02 IST" depends-on-methods="testsScripts.TestCase1.submitOrder" duration-ms="2635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Selenium@123, email=abcselenium@123.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrdersPage -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.TestCase1@1573f9fc]" started-at="2026-03-11T09:48:02 IST" name="closeDriver" finished-at="2026-03-11T09:48:02 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.TestCase1@1573f9fc]" started-at="2026-03-11T09:48:02 IST" name="landingPage" finished-at="2026-03-11T09:48:07 IST" duration-ms="4449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingPage -->
+        <test-method signature="verifyOrdersPage(java.util.HashMap)[pri:0, instance:testsScripts.TestCase1@1573f9fc]" started-at="2026-03-11T09:48:07 IST" name="verifyOrdersPage" data-provider="getData" finished-at="2026-03-11T09:48:08 IST" depends-on-methods="testsScripts.TestCase1.submitOrder" duration-ms="1222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Demo@123, email=lalit.123@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrdersPage -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.TestCase1@1573f9fc]" started-at="2026-03-11T09:48:08 IST" name="closeDriver" finished-at="2026-03-11T09:48:08 IST" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- testsScripts.TestCase1 -->
-    </test> <!-- Submit Order Test -->
-    <test started-at="2026-02-25T10:26:15 IST" name="Error Validation Test" finished-at="2026-02-25T10:26:28 IST" duration-ms="12791">
-      <class name="testsScripts.ErrorValidation">
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.ErrorValidation@70325e14]" started-at="2026-02-25T10:26:15 IST" name="landingPage" finished-at="2026-02-25T10:26:21 IST" duration-ms="5355" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- landingPage -->
-        <test-method signature="incorrectCredentials()[pri:0, instance:testsScripts.ErrorValidation@70325e14]" started-at="2026-02-25T10:26:21 IST" name="incorrectCredentials" finished-at="2026-02-25T10:26:21 IST" duration-ms="604" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incorrectCredentials -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.ErrorValidation@70325e14]" started-at="2026-02-25T10:26:21 IST" name="closeDriver" finished-at="2026-02-25T10:26:22 IST" duration-ms="168" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.ErrorValidation@70325e14]" started-at="2026-02-25T10:26:22 IST" name="landingPage" finished-at="2026-02-25T10:26:27 IST" duration-ms="5278" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- landingPage -->
-        <test-method signature="incorrectProductValidation()[pri:0, instance:testsScripts.ErrorValidation@70325e14]" started-at="2026-02-25T10:26:27 IST" name="incorrectProductValidation" finished-at="2026-02-25T10:26:28 IST" duration-ms="1145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incorrectProductValidation -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.ErrorValidation@70325e14]" started-at="2026-02-25T10:26:28 IST" name="closeDriver" finished-at="2026-02-25T10:26:28 IST" duration-ms="223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- testsScripts.ErrorValidation -->
-    </test> <!-- Error Validation Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

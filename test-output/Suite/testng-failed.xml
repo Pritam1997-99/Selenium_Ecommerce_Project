@@ -6,22 +6,11 @@
       <class name="testsScripts.TestCase1">
         <methods>
           <include name="submitOrder"/>
+          <include name="verifyOrdersPage"/>
           <include name="closeDriver"/>
           <include name="landingPage"/>
         </methods>
       </class> <!-- testsScripts.TestCase1 -->
     </classes>
   </test> <!-- Submit Order Test(failed) -->
-  <test thread-count="5" name="Error Validation Test(failed)">
-    <classes>
-      <class name="testsScripts.ErrorValidation">
-        <methods>
-          <include name="landingPage"/>
-          <include name="incorrectCredentials"/>
-          <include name="closeDriver"/>
-          <include name="incorrectProductValidation"/>
-        </methods>
-      </class> <!-- testsScripts.ErrorValidation -->
-    </classes>
-  </test> <!-- Error Validation Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

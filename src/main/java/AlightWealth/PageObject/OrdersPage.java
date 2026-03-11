@@ -21,11 +21,11 @@ public class OrdersPage extends AbstractFunctions {
 	@FindBy(xpath = "//thead[@class='thead-dark']/following-sibling::tbody/tr/td[2]")
 	List<WebElement> ordersList;
 
-	public boolean verifyProductPresentInOrdersPage() {
+	public boolean verifyProductPresentInOrdersPage(String productName) {
 		goToOrdersPage();
 
 		for (int i = 0; i < ordersList.size(); i++) {
-			if (ordersList.get(i).getText().equalsIgnoreCase("ADIDAS ORIGINAL")) {
+			if (ordersList.get(i).getText().equalsIgnoreCase(productName)) {
 				return true;
 			}
 		}
