@@ -39,7 +39,7 @@ public class PaymentPage extends AbstractFunctions{
 		waitForElementToDissappeare(dissapear);
 		//placeOrderButton.click();
 		clickAButton(placeOrderButton);
-		waitForElementToAppeare(wait);
+		//waitForElementToAppeare(wait);
 		FinalPage finalpage=new FinalPage(driver);
 		return finalpage;
 	}

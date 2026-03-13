@@ -1,5 +1,6 @@
 package AlightWealth.PageObject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,7 +19,10 @@ public class FinalPage extends AbstractFunctions {
 	@FindBy(xpath="//h1[@class='hero-primary']")
 	WebElement validationText;
 	
+	By ele=By.xpath("//h1[@class='hero-primary']");
+	
 	public String orderConfirmation() {
+		waitForElementToAppeare(ele);
 		return validationText.getText();
 		
 	}
