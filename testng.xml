@@ -8,6 +8,11 @@
     </classes>
   </test> <!-- Test -->
   <test thread-count="5" name="Error Validation Test">
+  <groups>
+  <run>
+  <exclude name="Regression"></exclude>
+  </run>
+  </groups>
   <classes>
   <class name="testsScripts.ErrorValidation" />
   </classes>

@@ -15,7 +15,7 @@ import AlightWealth.PageObject.ProductCheckOut;
 import AlightWealth.TestComponents.BaseTest;
 
 public class ErrorValidation extends BaseTest {
-	@Test
+	@Test(groups="Regression")
 	public void incorrectCredentials() throws IOException, InterruptedException {
 	
 		page.incorrectLogin("abcseleniu@123.com", "Selenium@123");
@@ -24,7 +24,7 @@ public class ErrorValidation extends BaseTest {
 		
 	}
 	
-	@Test
+	@Test(groups="Regression")
 	public void incorrectProductValidation() throws InterruptedException {
 		String productName="ADIDAS DUPLICATE";
 		ProductCatalogue listOfProducts = page.login("lalit.123@gmail.com", "Demo@123");
