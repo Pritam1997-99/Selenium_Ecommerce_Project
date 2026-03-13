@@ -16,10 +16,10 @@ public class FinalPage extends AbstractFunctions {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//h1[@class='hero-primary']")
+	@FindBy(css=".hero-primary")
 	WebElement validationText;
 	
-	By ele=By.xpath("//h1[@class='hero-primary']");
+	By ele=By.cssSelector(".hero-primary");
 	
 	public String orderConfirmation() {
 		waitForElementToAppeare(ele);
