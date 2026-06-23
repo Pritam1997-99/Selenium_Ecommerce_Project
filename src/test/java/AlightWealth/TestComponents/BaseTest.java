@@ -36,9 +36,9 @@ public class BaseTest {
 		
 		if(browser.equalsIgnoreCase("chrome")) {
 		WebDriverManager.chromedriver().setup();
-		ChromeOptions options=new ChromeOptions();
-		options.addArguments("--headless=new");
-		driver = new ChromeDriver(options);
+		//ChromeOptions options=new ChromeOptions();
+		//options.addArguments("--headless=new");
+		driver = new ChromeDriver();
 		} else if(browser.equalsIgnoreCase("firefox")) {
 			System.out.println("Firefox Browser");
 		}else if(browser.equalsIgnoreCase("edge")) {
