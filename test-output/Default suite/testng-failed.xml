@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="databaseConnection.JDBCConnection">
+      <class name="testsScripts.TestCase1">
         <methods>
-          <include name="getData"/>
+          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="verifyOrdersPage"/>
+          <include name="landingPage"/>
+          <include name="closeDriver"/>
         </methods>
-      </class> <!-- databaseConnection.JDBCConnection -->
+      </class> <!-- testsScripts.TestCase1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

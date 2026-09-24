@@ -22,13 +22,13 @@ public class ProductCatalogue extends AbstractFunctions {
 	}
 
 	@FindBy(xpath = "//div[starts-with(@class,'col-lg-4')]")
-	List<WebElement> prod;
+	 List<WebElement> prod;
 	
 	@FindBy(css = ".ng-animating")
 	WebElement spinner;
 
-	By waitBy = By.xpath("//div[starts-with(@class,'col-lg-4')]");
-	// WebElement
+	static By waitBy = By.xpath("//div[starts-with(@class,'col-lg-4')]");
+	static // WebElement
 	// need=prod.findElement(By.xpath("//div[@class='card-body']/button[2]"));
 	By toastMessage = By.cssSelector("#toast-container");
 

@@ -1,5 +1,12 @@
 package AlightWealth.data;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -11,6 +18,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReporting implements ITestListener {
+	WebDriver driver;
 	public ExtentSparkReporter sparkReporter; // UI of the report
 	public ExtentReports extent; // populate common info on the report
 	public ExtentTest test; // creating test case entries in the report and update status of the test
@@ -47,6 +55,18 @@ public class ExtentReporting implements ITestListener {
 		test = extent.createTest(result.getName());
 		test.log(Status.FAIL, "Test case FAILED is:" + result.getName());
 		test.log(Status.FAIL, "Test Case FAILED cause is: " + result.getThrowable());
+		
+		//Screen-shot code
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		File loc=new File(System.getProperty("user.dir")+ "/Screenshots/failed.png");
+		try {
+			FileUtils.copyFile(source, loc);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 	public void onTestSkipped(ITestResult result) {

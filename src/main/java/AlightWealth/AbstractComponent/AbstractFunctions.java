@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import AlightWealth.PageObject.OrdersPage;
 
 public class AbstractFunctions {
-	WebDriver driver;
+	 WebDriver driver;
 	public AbstractFunctions(WebDriver driver) {
 		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		this.driver=driver;

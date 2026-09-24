@@ -1,4 +1,4 @@
-package AlightWealth.TestComponents;
+/*package AlightWealth.TestComponents;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -100,4 +100,4 @@ public class EndToEndTestScriptUsedInPageObject extends BaseTest {
 
 	}
 
-}
+}*/
