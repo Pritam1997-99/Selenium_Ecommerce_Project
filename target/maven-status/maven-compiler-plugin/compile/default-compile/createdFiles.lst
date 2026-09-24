@@ -1,0 +1,7 @@
+AlightWealth\PageObject\LandingPage.class
+AlightWealth\AbstractComponent\AbstractFunctions.class
+AlightWealth\PageObject\OrdersPage.class
+AlightWealth\PageObject\PaymentPage.class
+AlightWealth\PageObject\ProductCheckOut.class
+AlightWealth\PageObject\FinalPage.class
+AlightWealth\PageObject\ProductCatalogue.class
