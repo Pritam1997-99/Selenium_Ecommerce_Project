@@ -5,10 +5,10 @@
     <classes>
       <class name="testsScripts.TestCase1">
         <methods>
-          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="submitOrder"/>
           <include name="verifyOrdersPage"/>
-          <include name="closeDriver"/>
           <include name="landingPage"/>
+          <include name="closeDriver"/>
         </methods>
       </class> <!-- testsScripts.TestCase1 -->
     </classes>
