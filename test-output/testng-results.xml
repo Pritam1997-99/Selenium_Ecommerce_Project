@@ -1,99 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-27T15:16:39 IST" name="Suite" finished-at="2026-09-27T15:17:35 IST" duration-ms="56349">
+  <suite started-at="2026-09-27T15:31:23 IST" name="Default suite" finished-at="2026-09-27T15:31:37 IST" duration-ms="13869">
     <groups>
       <group name="Regression">
-        <method signature="ErrorValidation.incorrectCredentials(java.util.HashMap)[pri:0, instance:testsScripts.ErrorValidation@445b295b]" name="incorrectCredentials" class="testsScripts.ErrorValidation"/>
-        <method signature="ErrorValidation.incorrectProductValidation(java.util.HashMap)[pri:0, instance:testsScripts.ErrorValidation@445b295b]" name="incorrectProductValidation" class="testsScripts.ErrorValidation"/>
+        <method signature="ErrorValidation.incorrectCredentials(java.util.HashMap)[pri:0, instance:testsScripts.ErrorValidation@8297b3a]" name="incorrectCredentials" class="testsScripts.ErrorValidation"/>
+        <method signature="ErrorValidation.incorrectProductValidation(java.util.HashMap)[pri:0, instance:testsScripts.ErrorValidation@8297b3a]" name="incorrectProductValidation" class="testsScripts.ErrorValidation"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2026-09-27T15:16:39 IST" name="Test" finished-at="2026-09-27T15:17:35 IST" duration-ms="56349">
-      <class name="testsScripts.TestCase1">
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.TestCase1@247bddad]" started-at="2026-09-27T15:16:39 IST" name="landingPage" finished-at="2026-09-27T15:16:45 IST" duration-ms="5467" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- landingPage -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:testsScripts.TestCase1@247bddad]" started-at="2026-09-27T15:16:45 IST" name="submitOrder" data-provider="getData" finished-at="2026-09-27T15:16:59 IST" duration-ms="14481" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Selenium@123, email=abcselenium@123.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.TestCase1@247bddad]" started-at="2026-09-27T15:16:59 IST" name="closeDriver" finished-at="2026-09-27T15:16:59 IST" duration-ms="266" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.TestCase1@247bddad]" started-at="2026-09-27T15:16:59 IST" name="landingPage" finished-at="2026-09-27T15:17:03 IST" duration-ms="3394" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- landingPage -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:testsScripts.TestCase1@247bddad]" started-at="2026-09-27T15:17:03 IST" name="submitOrder" data-provider="getData" finished-at="2026-09-27T15:17:17 IST" duration-ms="14350" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Demo@123, email=lalit.123@gmail.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.TestCase1@247bddad]" started-at="2026-09-27T15:17:17 IST" name="closeDriver" finished-at="2026-09-27T15:17:18 IST" duration-ms="543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.TestCase1@247bddad]" started-at="2026-09-27T15:17:18 IST" name="landingPage" finished-at="2026-09-27T15:17:21 IST" duration-ms="3325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- landingPage -->
-        <test-method signature="verifyOrdersPage(java.util.HashMap)[pri:0, instance:testsScripts.TestCase1@247bddad]" started-at="2026-09-27T15:17:21 IST" name="verifyOrdersPage" data-provider="getData" finished-at="2026-09-27T15:17:22 IST" depends-on-methods="testsScripts.TestCase1.submitOrder" duration-ms="862" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Selenium@123, email=abcselenium@123.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOrdersPage -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.TestCase1@247bddad]" started-at="2026-09-27T15:17:22 IST" name="closeDriver" finished-at="2026-09-27T15:17:22 IST" duration-ms="206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.TestCase1@247bddad]" started-at="2026-09-27T15:17:22 IST" name="landingPage" finished-at="2026-09-27T15:17:25 IST" duration-ms="2882" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- landingPage -->
-        <test-method signature="verifyOrdersPage(java.util.HashMap)[pri:0, instance:testsScripts.TestCase1@247bddad]" started-at="2026-09-27T15:17:25 IST" name="verifyOrdersPage" data-provider="getData" finished-at="2026-09-27T15:17:26 IST" depends-on-methods="testsScripts.TestCase1.submitOrder" duration-ms="836" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Demo@123, email=lalit.123@gmail.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOrdersPage -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.TestCase1@247bddad]" started-at="2026-09-27T15:17:26 IST" name="closeDriver" finished-at="2026-09-27T15:17:26 IST" duration-ms="244" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- testsScripts.TestCase1 -->
+    <test started-at="2026-09-27T15:31:23 IST" name="Default test" finished-at="2026-09-27T15:31:37 IST" duration-ms="13869">
       <class name="testsScripts.ErrorValidation">
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.ErrorValidation@445b295b]" started-at="2026-09-27T15:17:26 IST" name="landingPage" finished-at="2026-09-27T15:17:29 IST" duration-ms="3381" status="PASS">
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.ErrorValidation@8297b3a]" started-at="2026-09-27T15:31:24 IST" name="landingPage" finished-at="2026-09-27T15:31:28 IST" duration-ms="4623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- landingPage -->
-        <test-method signature="incorrectCredentials(java.util.HashMap)[pri:0, instance:testsScripts.ErrorValidation@445b295b]" started-at="2026-09-27T15:17:29 IST" name="incorrectCredentials" data-provider="getInvalidData" finished-at="2026-09-27T15:17:30 IST" duration-ms="904" status="PASS">
+        <test-method signature="incorrectCredentials(java.util.HashMap)[pri:0, instance:testsScripts.ErrorValidation@8297b3a]" started-at="2026-09-27T15:31:28 IST" name="incorrectCredentials" data-provider="getInvalidData" finished-at="2026-09-27T15:31:30 IST" duration-ms="1255" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -101,18 +23,84 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (375, 696)
+  (Session info: MicrosoftEdge=154.0.4258.37)
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [abe526d5f4deab9f349a8cce64f7a9a6, clickElement {id=f.E1E1C3B9F86BC3206D8FCAEB3B31D84A.d.6FCB4B42CE4C5A34A1ACAD72291681AB.e.7}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 154.0.4258.37, fedcm:accounts: true, goog:processID: 29008, ms:edgeOptions: {debuggerAddress: localhost:53305}, msedge: {msedgedriverVersion: 154.0.4258.37 (f6ddc7bb8d2a..., userDataDir: C:\Users\hp\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53305/devtoo..., se:cdpVersion: 154.0.4258.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (abe526d5f4deab9f349a8cce64f7a9a6)] -> id: login]
+Session ID: abe526d5f4deab9f349a8cce64f7a9a6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (375, 696)
+  (Session info: MicrosoftEdge=154.0.4258.37)
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [abe526d5f4deab9f349a8cce64f7a9a6, clickElement {id=f.E1E1C3B9F86BC3206D8FCAEB3B31D84A.d.6FCB4B42CE4C5A34A1ACAD72291681AB.e.7}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 154.0.4258.37, fedcm:accounts: true, goog:processID: 29008, ms:edgeOptions: {debuggerAddress: localhost:53305}, msedge: {msedgedriverVersion: 154.0.4258.37 (f6ddc7bb8d2a..., userDataDir: C:\Users\hp\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53305/devtoo..., se:cdpVersion: 154.0.4258.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (abe526d5f4deab9f349a8cce64f7a9a6)] -> id: login]
+Session ID: abe526d5f4deab9f349a8cce64f7a9a6
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at AlightWealth.PageObject.LandingPage.incorrectLogin(LandingPage.java:49)
+at testsScripts.ErrorValidation.incorrectCredentials(ErrorValidation.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- incorrectCredentials -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.ErrorValidation@445b295b]" started-at="2026-09-27T15:17:30 IST" name="closeDriver" finished-at="2026-09-27T15:17:31 IST" duration-ms="218" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.ErrorValidation@8297b3a]" started-at="2026-09-27T15:31:30 IST" name="closeDriver" finished-at="2026-09-27T15:31:31 IST" duration-ms="1785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.ErrorValidation@445b295b]" started-at="2026-09-27T15:17:31 IST" name="landingPage" finished-at="2026-09-27T15:17:34 IST" duration-ms="3248" status="PASS">
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:testsScripts.ErrorValidation@8297b3a]" started-at="2026-09-27T15:31:31 IST" name="landingPage" finished-at="2026-09-27T15:31:34 IST" duration-ms="2789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- landingPage -->
-        <test-method signature="incorrectProductValidation(java.util.HashMap)[pri:0, instance:testsScripts.ErrorValidation@445b295b]" started-at="2026-09-27T15:17:34 IST" name="incorrectProductValidation" data-provider="getInvalidProductName" finished-at="2026-09-27T15:17:35 IST" duration-ms="875" status="PASS">
+        <test-method signature="incorrectProductValidation(java.util.HashMap)[pri:0, instance:testsScripts.ErrorValidation@8297b3a]" started-at="2026-09-27T15:31:34 IST" name="incorrectProductValidation" data-provider="getInvalidProductName" finished-at="2026-09-27T15:31:35 IST" duration-ms="1243" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -120,14 +108,80 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (375, 707)
+  (Session info: MicrosoftEdge=154.0.4258.37)
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [62b7f76cd4b1704af55bdd49f8eaab47, clickElement {id=f.2FA90EDE7FC273EA17449DC29CB94899.d.30A8AE73D5D6029BA6A8D39AAAA160EC.e.5}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 154.0.4258.37, fedcm:accounts: true, goog:processID: 40164, ms:edgeOptions: {debuggerAddress: localhost:64086}, msedge: {msedgedriverVersion: 154.0.4258.37 (f6ddc7bb8d2a..., userDataDir: C:\Users\hp\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64086/devtoo..., se:cdpVersion: 154.0.4258.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (62b7f76cd4b1704af55bdd49f8eaab47)] -> id: login]
+Session ID: 62b7f76cd4b1704af55bdd49f8eaab47]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (375, 707)
+  (Session info: MicrosoftEdge=154.0.4258.37)
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [62b7f76cd4b1704af55bdd49f8eaab47, clickElement {id=f.2FA90EDE7FC273EA17449DC29CB94899.d.30A8AE73D5D6029BA6A8D39AAAA160EC.e.5}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 154.0.4258.37, fedcm:accounts: true, goog:processID: 40164, ms:edgeOptions: {debuggerAddress: localhost:64086}, msedge: {msedgedriverVersion: 154.0.4258.37 (f6ddc7bb8d2a..., userDataDir: C:\Users\hp\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64086/devtoo..., se:cdpVersion: 154.0.4258.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (62b7f76cd4b1704af55bdd49f8eaab47)] -> id: login]
+Session ID: 62b7f76cd4b1704af55bdd49f8eaab47
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at AlightWealth.PageObject.LandingPage.login(LandingPage.java:39)
+at testsScripts.ErrorValidation.incorrectProductValidation(ErrorValidation.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- incorrectProductValidation -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.ErrorValidation@445b295b]" started-at="2026-09-27T15:17:35 IST" name="closeDriver" finished-at="2026-09-27T15:17:35 IST" duration-ms="218" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testsScripts.ErrorValidation@8297b3a]" started-at="2026-09-27T15:31:35 IST" name="closeDriver" finished-at="2026-09-27T15:31:37 IST" duration-ms="1768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- testsScripts.ErrorValidation -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

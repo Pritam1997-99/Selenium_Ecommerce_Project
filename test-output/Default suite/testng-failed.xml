@@ -6,8 +6,9 @@
       <class name="testsScripts.ErrorValidation">
         <methods>
           <include name="landingPage"/>
+          <include name="incorrectCredentials" invocation-numbers="0"/>
           <include name="closeDriver"/>
-          <include name="incorrectProductValidation"/>
+          <include name="incorrectProductValidation" invocation-numbers="0"/>
         </methods>
       </class> <!-- testsScripts.ErrorValidation -->
     </classes>
