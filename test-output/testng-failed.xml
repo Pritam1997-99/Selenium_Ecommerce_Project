@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testsScripts.TestCase1">
+      <class name="testsScripts.ErrorValidation">
         <methods>
-          <include name="submitOrder" invocation-numbers="0 1"/>
-          <include name="verifyOrdersPage"/>
           <include name="landingPage"/>
           <include name="closeDriver"/>
+          <include name="incorrectProductValidation"/>
         </methods>
-      </class> <!-- testsScripts.TestCase1 -->
+      </class> <!-- testsScripts.ErrorValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

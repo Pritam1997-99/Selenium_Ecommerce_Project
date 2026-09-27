@@ -17,8 +17,10 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import AlightWealth.TestComponents.BaseTest;
+
 public class ExtentReporting implements ITestListener {
-	WebDriver driver;
+	WebDriver driver=BaseTest.driver;
 	public ExtentSparkReporter sparkReporter; // UI of the report
 	public ExtentReports extent; // populate common info on the report
 	public ExtentTest test; // creating test case entries in the report and update status of the test

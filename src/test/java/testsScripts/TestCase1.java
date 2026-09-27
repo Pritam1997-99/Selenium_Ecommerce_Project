@@ -19,6 +19,7 @@ import AlightWealth.TestComponents.BaseTest;
 
 public class TestCase1 extends BaseTest {
 	//String productName="ADIDAS ORIGINAL";
+	
 	@Test(dataProvider="getData")
 	public void submitOrder(HashMap<String,String> input) throws IOException, InterruptedException {
 	

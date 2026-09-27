@@ -14,6 +14,8 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -24,7 +26,7 @@ import AlightWealth.PageObject.LandingPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-	public WebDriver driver;
+	public static WebDriver driver;
 	public LandingPage page;
 	
 	public WebDriver InvokeBrowser() throws IOException {
@@ -35,14 +37,14 @@ public class BaseTest {
 		String browser= prp.getProperty("browser");
 		
 		if(browser.equalsIgnoreCase("chrome")) {
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 		//ChromeOptions options=new ChromeOptions();
 		//options.addArguments("--headless=new");
 		driver = new ChromeDriver();
 		} else if(browser.equalsIgnoreCase("firefox")) {
-			System.out.println("Firefox Browser");
+			driver=new FirefoxDriver();
 		}else if(browser.equalsIgnoreCase("edge")) {
-			System.out.println("Edge browser");
+			driver=new EdgeDriver();
 		}
 		
 		driver.manage().window().maximize();
@@ -70,7 +72,7 @@ public class BaseTest {
 	
 	@AfterMethod
 	public void closeDriver() {
-		driver.close();
+		driver.quit();
 	}
 	
 	}
